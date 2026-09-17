@@ -1,0 +1,29 @@
+
+  // // now we iterate this over and get the subKeys, so we check if it matches whats defined in the defaultConfig, if not we will warn the user about it.
+  // for (const key of Object.keys(defaultConfig)) {
+  //   const defaultSubKeys = Object.keys(
+  //     defaultConfig[key as keyof ConfigProps] ?? {}
+  //   )
+  //   const userSubKeys = Object.keys(
+  //     userConfig?.[key as keyof ConfigProps] ?? {}
+  //   )
+
+  //   if (defaultSubKeys.length > 0) {
+  //     const missingSubKeys = defaultSubKeys.filter(
+  //       (subKey) => !userSubKeys.includes(subKey)
+  //     )
+  //     if (missingSubKeys.length > 0) {
+  //       console.log('Found some different/missing fields in your config.toml:')
+  //       console.log(
+  //         `In section [${key}], found ${missingSubKeys.length} missing field(s): ${missingSubKeys.join(
+  //           ', '
+  //         )}`
+  //       )
+  //       console.log(
+  //         'This is just a warn, maybe you are trying to develop something extra; if so, you can ignore this.'
+  //       )
+  //     }
+  //   }
+  // }
+
+  // console.log('Config loaded normally.')
